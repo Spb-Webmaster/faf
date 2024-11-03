@@ -1,0 +1,22 @@
+video {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 2px solid #d22c2c; }
+
+._p_video {
+  padding: 30px 0 10px 0; }
+
+._p_gallery {
+  padding: 30px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center; }
+  ._p_gallery .mItem {
+    padding: 5px 35px 30px 0; }
+  ._p_gallery img {
+    border-radius: 6px;
+    border: 3px solid #f1f1f1; }
+  ._p_gallery .mItem:nth-child(3n) {
+    padding-right: 0; }
+
+/*# sourceMappingURL=product.css.map */

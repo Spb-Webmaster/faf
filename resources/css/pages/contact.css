@@ -1,0 +1,42 @@
+._contact_flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative; }
+  ._contact_flex ._contact_left {
+    width: 60%; }
+  ._contact_flex ._contact_right {
+    width: 40%; }
+  ._contact_flex ._Ymap {
+    max-width: 720px;
+    position: relative;
+    margin: 22px 0 0 0;
+    border-radius: 12px;
+    overflow: hidden; }
+  ._contact_flex ._h2 {
+    padding-top: 21px; }
+
+.JFormFieldMap_wrapper {
+  border-radius: 12px;
+  overflow: hidden; }
+
+.c_doc_text {
+  padding: 0 0 0 40px; }
+
+.recvis {
+  padding: 13px 0 0 0; }
+  .recvis p {
+    padding: 8px 0;
+    line-height: 100%;
+    font-size: 18px; }
+    .recvis p strong {
+      font-weight: 900;
+      line-height: 1.4em; }
+
+._Ymap h5 {
+  font-size: 22px;
+  font-weight: 600;
+  padding: 4px 0 10px 0;
+  color: #d22c2c; }
+
+/*# sourceMappingURL=contact.css.map */

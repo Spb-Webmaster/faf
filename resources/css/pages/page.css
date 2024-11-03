@@ -1,0 +1,38 @@
+._h1 {
+  font-size: 36px;
+  font-weight: 700;
+  padding: 16px 0;
+  position: relative; }
+  ._h1:before {
+    width: 115px;
+    height: 4px;
+    position: absolute;
+    content: "";
+    display: block;
+    background: #d22c2c;
+    bottom: 7px;
+    transform: skew(345deg); }
+
+._h2 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 16px 0;
+  position: relative; }
+
+.page__subtitle {
+  color: #667085;
+  padding-bottom: 20px;
+  padding-top: 5px;
+  font-size: 15px; }
+
+.desc_to,
+.desc_from {
+  padding: 16px;
+  border: 2px solid #d22c2c;
+  border-radius: 12px;
+  margin: 10px 10px 10px 30px;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5em; }
+
+/*# sourceMappingURL=page.css.map */

@@ -1,0 +1,64 @@
+@charset "utf-8";
+$color: #282828;
+$colorRed: #d22c2c;
+$colorCCC: #CCCCCC;
+$colorGrey: #667085;
+$colorBlue: #00AFEF;
+$colorGreen: #0f6567;
+
+
+$maxWidth: 1440;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
+@mixin Roboto {
+    font-family: 'Roboto Flex Variable', sans-serif;
+}
+
+._h1 {
+    font-size: 36px;
+    font-weight: 700;
+    padding: 16px 0;
+    position: relative;
+    &:before {
+            width: 115px;
+            height: 4px;
+            position: absolute;
+            content: "";
+            display: block;
+            background: $colorRed;
+            bottom: 7px;
+        transform: skew(345deg);
+
+    }
+    span {
+
+    }
+}
+._h2 {
+    font-size: 30px;
+    font-weight: 700;
+    padding: 16px 0;
+    position: relative;
+}
+.page__subtitle {
+    color: $colorGrey;
+    padding-bottom: 20px;
+    padding-top: 5px;
+    font-size: 15px;
+}
+
+.desc_to,
+.desc_from {
+    padding: 16px;
+    border: 2px solid $colorRed;
+    border-radius: 12px;
+    margin: 10px 10px 10px 30px;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.5em;
+}

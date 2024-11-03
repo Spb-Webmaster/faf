@@ -1,0 +1,160 @@
+._teaser {
+  padding-bottom: 30px; }
+  ._teaser:last-child {
+    padding-bottom: 0; }
+
+._t_flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  padding: 30px 0 0 0; }
+
+._t_left {
+  width: 300px;
+  min-width: 300px; }
+  ._t_left ._t_img {
+    background: #f1f1f1;
+    width: 264px;
+    height: 264px;
+    border-radius: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    ._t_left ._t_img img {
+      max-width: none;
+      border-radius: 9px;
+      display: block; }
+
+._t_right {
+  width: auto; }
+
+._t_title {
+  color: #282828;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 22px;
+  padding: 20px 0 10px 0;
+  line-height: 1.3em; }
+  ._t_title a {
+    color: #282828;
+    text-decoration: none; }
+
+._t_price {
+  padding: 16px 0 0 0;
+  max-width: 260px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  position: relative;
+  min-height: 30px;
+  left: 6px; }
+  ._t_price .price_teaser_label {
+    width: 50%;
+    position: relative;
+    color: #667085; }
+    ._t_price .price_teaser_label .__t_css {
+      position: relative;
+      display: block;
+      padding: 15px 16px; }
+    ._t_price .price_teaser_label:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: #CCCCCC;
+      transform: skew(345deg);
+      bottom: 2px; }
+  ._t_price .price_teaser {
+    width: 50%;
+    position: relative;
+    color: #d22c2c;
+    font-weight: 600;
+    font-size: 26px;
+    text-align: right; }
+    ._t_price .price_teaser .__t_css {
+      position: relative;
+      display: block;
+      padding: 10px; }
+    ._t_price .price_teaser:before {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 3px;
+      background: #d22c2c;
+      transform: skew(345deg);
+      bottom: 2px; }
+
+.desc._t_desc ul li:before {
+  background: #d22c2c; }
+
+._t_more {
+  position: relative;
+  min-height: 50px; }
+  ._t_more a {
+    text-decoration: none;
+    display: block;
+    padding: 40px 0 0 0; }
+
+._t_border {
+  width: 100%;
+  height: 1px;
+  background: #CCCCCC;
+  position: absolute;
+  top: 63px; }
+
+._t_button {
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #d22c2c;
+  background: #fff;
+  text-decoration: none;
+  margin: 0 auto;
+  width: 250px;
+  height: 48px;
+  transform: skew(345deg);
+  border: 1px solid #d22c2c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px; }
+  ._t_button:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #d22c2c;
+    transition: all 0.3s;
+    z-index: -1; }
+  ._t_button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2; }
+  ._t_button span {
+    text-decoration: none;
+    font-weight: 600;
+    word-spacing: 3px;
+    font-size: 19px;
+    transform: skew(16deg); }
+  ._t_button:hover {
+    color: #fff; }
+    ._t_button:hover:before {
+      width: 100%; }
+
+._label {
+  font-weight: 600;
+  color: #667085; }
+
+/*# sourceMappingURL=products.css.map */

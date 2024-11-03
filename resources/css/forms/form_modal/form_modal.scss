@@ -1,0 +1,121 @@
+@charset "utf-8";
+$color: #282828;
+$colorRed: #d22c2c;
+$colorCCC: #CCCCCC;
+$colorGrey: #667085;
+$colorBlue: #00AFEF;
+$colorGreen: #0f6567;
+
+
+$maxWidth: 1440;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
+@mixin Roboto {
+    font-family: 'Roboto Flex Variable', sans-serif;
+}
+
+@mixin OpenSans {
+    font-family: 'Open Sans Variable', sans-serif;
+
+}
+
+
+.F_form {
+padding: 0 !important;
+    border-radius: 12px !important;
+    min-width: 600px;
+    .F_form__body {
+        padding: 24px;
+    }
+}
+.F_form_474 {
+
+    min-width: 474px;
+    .F_form__body {
+        padding: 0;
+    }
+    .formLogin__wrapp {
+
+        box-shadow: none !important;
+    }
+}
+
+.F_form__left {
+    padding: 0 0 24px 0;
+
+}
+
+
+.new__temp_middle {
+
+}
+
+
+.F_form_gr-app {
+    max-width: 422px;
+    min-width: 422px;
+    .F_form__body {
+        padding: 0 !important;
+    }
+}
+
+/*  */
+.F_responce {
+    background: #ffffff;
+    border-radius: 12px;
+    display: none;
+
+    .af-message {
+        text-align: center;
+        padding: 24px;
+    }
+
+    .font_24 {
+
+        font-size: 24px;
+        padding: 0 0 20px 0;
+
+    }
+
+    .ccent {
+        padding: 20px;
+    }
+}
+
+._r_field {
+    span {
+            color: $colorRed;
+            padding: 9px 0;
+            display: block;
+
+    }
+}
+
+
+
+.modal_product {
+    display: flex;
+    .modal_left {
+        width: 30%;
+        padding: 7px 0 0 0;
+        img {
+            background: #f1f1f1;
+            padding: 5px;
+            border-radius: 6px;
+        }
+        .res_price {
+            padding: 10px 0 0 0;
+            color: $colorRed;
+            font-weight: 600;
+            font-size: 26px;
+        }
+    }
+    .modal_right {
+        width: 70%;
+    }
+}

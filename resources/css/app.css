@@ -1,0 +1,31 @@
+@import '@fontsource-variable/open-sans';
+/*Supports weights 300-800*/
+@import '@fontsource-variable/open-sans/wdth-italic.css';
+/*@import '@fontsource/roboto';*/
+@import '@fontsource-variable/roboto-flex';
+
+
+
+@import "./pages/contact.scss";
+@import "./pages/page.scss";
+@import "./pages/category.scss";
+@import "./pages/products.scss";
+@import "./pages/product.scss";
+
+
+@import "./fancybox.scss";
+@import "./loader_map.css";
+@import "./pagination.scss";
+@import "./general-style/paddind.scss";
+@import "./general-style/width.scss";
+@import "./html/downloads/downloads.scss";
+@import "./html/logo/logo.scss";
+@import "./html/menues/menu_top.scss";
+@import "./forms/form_modal/form_modal.scss";
+@import "./forms/input.scss";
+@import "./forms/select.css";
+@import "./forms/loader.css";
+@import "./forms/button.scss";
+
+@import "./style.scss";
+@import "./media.scss";

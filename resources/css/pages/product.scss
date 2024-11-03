@@ -1,0 +1,47 @@
+@charset "utf-8";
+$color: #282828;
+$colorRed: #d22c2c;
+$colorCCC: #CCCCCC;
+$colorGrey: #667085;
+$colorBlue: #00AFEF;
+$colorGreen: #0f6567;
+
+
+$maxWidth: 1440;
+@mixin adaptiv-font($pcSize, $mobSize) {
+    $addSize: $pcSize - $mobSize;
+    $maxWidth: $maxWidth - 320;
+    font-size: calc(#{$mobSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth}));
+}
+
+
+@mixin Roboto {
+    font-family: 'Roboto Flex Variable', sans-serif;
+}
+._product {}
+  video {
+      border-radius: 12px;
+      overflow: hidden;
+      border: 2px solid $colorRed;
+  }
+
+._p_video {
+    padding: 30px 0 10px 0;
+}
+._p_gallery {
+    padding: 30px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .mItem {
+        padding: 5px 35px 30px 0;
+    }
+    img {
+        border-radius: 6px;
+        border: 3px solid #f1f1f1;
+    }
+    .mItem:nth-child(3n) {
+        padding-right:0 ;
+
+    }
+}
